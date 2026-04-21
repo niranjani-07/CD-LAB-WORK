@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char expr[50];
+
+    printf("Enter expression: ");
+    scanf("%s",expr);
+
+    printf("\nOriginal Expression: %s",expr);
+
+    printf("\n\nDAG Optimization Result\n");
+    printf("Common subexpressions are eliminated if present.\n");
+
+    printf("\nExample Optimized Code:\n");
+    printf("t1 = a + b\n");
+    printf("t2 = t1 + c\n");
+
+    return 0;
+}

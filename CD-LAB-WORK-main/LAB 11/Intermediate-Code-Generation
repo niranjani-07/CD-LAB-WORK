@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char op, arg1[10], arg2[10], result[10];
+
+    printf("Enter Operator: ");
+    scanf(" %c",&op);
+
+    printf("Enter Argument 1: ");
+    scanf("%s",arg1);
+
+    printf("Enter Argument 2: ");
+    scanf("%s",arg2);
+
+    printf("Enter Result Variable: ");
+    scanf("%s",result);
+
+    printf("\nQUADRUPLE\n");
+    printf("Op\tArg1\tArg2\tResult\n");
+    printf("%c\t%s\t%s\t%s\n",op,arg1,arg2,result);
+
+    printf("\nTRIPLE\n");
+    printf("Index\tOp\tArg1\tArg2\n");
+    printf("0\t%c\t%s\t%s\n",op,arg1,arg2);
+
+    printf("\nINDIRECT TRIPLE\n");
+    printf("Pointer Table\n");
+    printf("0 -> (0)\n");
+
+    return 0;
+}

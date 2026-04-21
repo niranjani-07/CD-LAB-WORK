@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+    int gen, kill, in, out;
+
+    printf("Enter GEN value: ");
+    scanf("%d",&gen);
+
+    printf("Enter KILL value: ");
+    scanf("%d",&kill);
+
+    printf("Enter IN value: ");
+    scanf("%d",&in);
+
+    out = gen + (in - kill);
+
+    printf("\nData Flow Equation\n");
+    printf("OUT[B] = GEN[B] U (IN[B] - KILL[B])\n");
+
+    printf("\nComputed OUT value: %d\n",out);
+
+    return 0;
+}
